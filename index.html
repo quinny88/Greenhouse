@@ -8,16 +8,30 @@
 </head>
 <body>
   <h1>🌱 Greenhouse Dashboard</h1>
+
   <div class="stats">
+    <h2>Current Stats</h2>
     <p>Temperature: <span id="temp">22°C</span></p>
     <p>Humidity: <span id="humidity">45%</span></p>
     <p>Light: <span id="light">300</span></p>
   </div>
 
   <div class="controls">
-    <label>Set Temp: <input type="number" id="setTemp" value="25"></label>
-    <label>Set Humidity: <input type="number" id="setHum" value="50"></label>
+    <h2>Settings</h2>
+    <label>
+      Set Temp: 
+      <input type="number" id="setTemp" value="25" min="15" max="35">
+    </label>
+    <label>
+      Set Humidity: 
+      <input type="number" id="setHum" value="50" min="20" max="80">
+    </label>
     <button onclick="updateSettings()">Update Settings</button>
+  </div>
+
+  <div class="diary">
+    <h2>Diary Log</h2>
+    <ul id="diaryLog"></ul>
   </div>
 
   <script src="script.js"></script>
