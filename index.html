@@ -5,17 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Greenhouse Dashboard</title>
   <link rel="icon" type="image/png" href="Tree.png">
+
+  <style>
+    body {
+      background-color: lightgreen;
+      font-family: Arial, sans-serif;
+    }
+
+    h1, h3 {
+      text-align: center;
+    }
+
+    article {
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color: #f1f1f1;
+      height: 300px; /* for demonstration, can remove later */
+      margin: 20px;
+    }
+
+    .stats {
+      margin: 20px;
+    }
+  </style>
 </head>
-<body style="background-color:lightgreen;">
+<body>
 
-  <h1 style="text-align:center;">Dashboard</h1>  
+  <h1>Dashboard</h1>  
 
-  <h2>Live Temperature: 22°C</h2>
-  <h2>Live Humidity: 45%</h2>
+  <div class="stats">
+    <h2>Live Temperature: 22°C</h2>
+    <h2>Live Humidity: 45%</h2>
+  </div>
 
   <hr>
 
-  <h3 style="text-align:center;">Diary</h3>
+  <h3>Diary</h3>
+
+  <article>
+    <p>Entry 1: Opened windows at 08:00.</p>
+    <p>Entry 2: Light turned on at 12:00.</p>
+    <p>Entry 3: Watered plants at 16:00.</p>
+  </article>
 
 </body>
 </html>
