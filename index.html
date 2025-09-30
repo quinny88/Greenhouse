@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenhouse Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌱 Greenhouse Dashboard</h1>
+  <div class="stats">
+    <p>Temperature: <span id="temp">22°C</span></p>
+    <p>Humidity: <span id="humidity">45%</span></p>
+    <p>Light: <span id="light">300</span></p>
+  </div>
+
+  <div class="controls">
+    <label>Set Temp: <input type="number" id="setTemp" value="25"></label>
+    <label>Set Humidity: <input type="number" id="setHum" value="50"></label>
+    <button onclick="updateSettings()">Update Settings</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
